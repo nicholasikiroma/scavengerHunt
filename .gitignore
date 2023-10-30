@@ -1,0 +1,13 @@
+node_modules
+.env
+.prettierrc
+connectServer.sh
+./logs
+.vscode
+ciphers.txt
+decrypt.js
+tokens.txt
+seed.js
+encrypt.js
+cipherGenerator.js
+tokenGenerator.js
