@@ -1,939 +1,105 @@
-[2023-10-29 22:40:56:4056] [31merror[39m: [31mError[39m
-[31m    at Query.run (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[2023-10-31 22:49:29:4929] [31merror[39m: [31mReferenceError: logger is not defined[39m
+[31m    at Object.createAccessCodes (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:22:5)[39m
 [31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async PostgresQueryInterface.createTable (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/abstract/query-interface.js:98:12)[39m
-[31m    at async accessCodes.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:942:7)[39m
-[31m    at async Sequelize.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:377:9)[39m
-[2023-10-29 22:57:55:5755] [31merror[39m: [31mError seeding the database: Invalid salt. Salt must be in the form of: $Vers$log2(NumRounds)$saltvalue[39m
-[2023-10-29 22:59:59:5959] [31merror[39m: [31mError seeding the database: Invalid salt. Salt must be in the form of: $Vers$log2(NumRounds)$saltvalue[39m
-[2023-10-29 23:13:59:1359] [31merror[39m: [31mError seeding the database: Invalid salt. Salt must be in the form of: $Vers$log2(NumRounds)$saltvalue[39m
-[2023-10-29 23:16:47:1647] [31merror[39m: [31mError seeding the database: rounds must be a number[39m
-[2023-10-29 23:24:02:242] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at validateCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:8:41)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:71:3[39m
+[2023-10-31 22:51:15:5115] [31merror[39m: [31mError seeding the database: tokensFilePath is not defined[39m
+[2023-10-31 22:53:09:539] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'join')[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:74:31[39m
 [31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:25:38:2538] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
+[2023-10-31 22:57:39:5739] [31merror[39m: [31mTypeError: ciphers.join is not a function[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:74:31[39m
 [31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:25:45:2545] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:25:46:2546] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:25:47:2547] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:25:48:2548] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:25:49:2549] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'message')[39m
-[31m    at Object.handler (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/validationLimiter.js:13:45)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:664:16[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:26:48:2648] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:26:49:2649] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:26:51:2651] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:26:52:2652] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:26:55:2655] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:26:56:2656] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'message')[39m
-[31m    at Object.handler (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/validationLimiter.js:13:45)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:664:16[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:33:47:3347] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:33:48:3348] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:33:49:3349] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:33:51:3351] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:33:51:3351] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:33:52:3352] [31merror[39m: [31mToo Many Requests: undefined	POST	/auth	undefined [39m
-[2023-10-29 23:34:57:3457] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:34:58:3458] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:34:59:3459] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:35:00:350] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:35:01:351] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:35:02:352] [31merror[39m: [31mToo Many Requests: undefined	POST	/auth	undefined [39m
-[2023-10-29 23:36:08:368] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:36:09:369] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:36:10:3610] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:36:11:3611] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:36:13:3613] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:36:14:3614] [31merror[39m: [31mToo Many Requests: undefined	POST	/auth	undefined [39m
-[2023-10-29 23:37:28:3728] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:37:29:3729] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:37:30:3730] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:37:31:3731] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:37:32:3732] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:37:33:3733] [31merror[39m: [31mToo Many Requests: undefined	POST	/auth	undefined [39m
-[2023-10-29 23:38:20:3820] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:38:21:3821] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:38:22:3822] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:38:23:3823] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:38:24:3824] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:38:25:3825] [31merror[39m: [31mToo Many Requests: undefined	POST	/auth	undefined [39m
-[2023-10-29 23:40:28:4028] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:40:29:4029] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:40:29:4029] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:40:30:4030] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:40:31:4031] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:40:32:4032] [31merror[39m: [31mToo Many Requests: undefined	POST	/auth	undefined [39m
-[2023-10-29 23:42:03:423] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:42:04:424] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:42:05:425] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:42:06:426] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:42:07:427] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:42:08:428] [31merror[39m: [31mToo Many Requests: undefined	POST	/auth	undefined [39m
-[2023-10-29 23:49:21:4921] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:49:22:4922] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:49:23:4923] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:49:24:4924] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:49:26:4926] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:49:27:4927] [31merror[39m: [31mToo Many Requests: Too many validation attempts from this IP, please try again later.	POST	/auth	undefined [39m
-[2023-10-29 23:50:21:5021] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:50:25:5025] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:50:26:5026] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:50:27:5027] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:50:28:5028] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:50:29:5029] [31merror[39m: [31mToo Many Requests: Too many validation attempts from this IP, please try again later.	POST	/auth	undefined [39m
-[2023-10-29 23:50:31:5031] [31merror[39m: [31mToo Many Requests: Too many validation attempts from this IP, please try again later.	POST	/auth	undefined [39m
-[2023-10-29 23:50:33:5033] [31merror[39m: [31mToo Many Requests: Too many validation attempts from this IP, please try again later.	POST	/auth	undefined [39m
-[2023-10-29 23:50:34:5034] [31merror[39m: [31mToo Many Requests: Too many validation attempts from this IP, please try again later.	POST	/auth	undefined [39m
-[2023-10-29 23:50:35:5035] [31merror[39m: [31mToo Many Requests: Too many validation attempts from this IP, please try again later.	POST	/auth	undefined [39m
-[2023-10-29 23:51:18:5118] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:51:20:5120] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:51:21:5121] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:51:22:5122] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-29 23:51:23:5123] [31merror[39m: [31mUnauthorized: Invalid Token[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:37:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-30 00:25:38:2538] [31merror[39m: [31mnonce_and_ciphertext is not defined[39m
-[2023-10-30 00:25:38:2538] [31merror[39m: [31mUnauthorized: Failed to decrypt[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:54:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-30 00:30:16:3016] [31merror[39m: [31minvalid key length[39m
-[2023-10-30 00:30:16:3016] [31merror[39m: [31mUnauthorized: Failed to decrypt[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.decryptCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:52:11)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:9:41[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:667:7[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-rate-limit/dist/index.mjs:583:5[39m
-[2023-10-30 00:31:40:3140] [31merror[39m: [31mTypeError: access_id.split is not a function[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:9:35[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:14:3[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[2023-10-30 00:35:57:3557] [31merror[39m: [31mReferenceError: Cannot access 'accessCode' before initialization[39m
-[31m    at Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:20:51)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:10:46[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:14:3[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[2023-10-30 00:43:34:4334] [31merror[39m: [31mNot Found: Access code not found[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:22:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:11:22[39m
-[2023-10-30 00:44:37:4437] [31merror[39m: [31mNot Found: Access code not found[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:24:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:11:22[39m
-[2023-10-30 00:45:29:4529] [31merror[39m: [31mNot Found: Access code not found[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:24:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:11:22[39m
-[2023-10-30 00:46:55:4655] [31merror[39m: [31mNot Found: Access code not found[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:24:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:13:22[39m
-[2023-10-30 00:48:30:4830] [31merror[39m: [31mNot Found: Access code not found[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:24:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:13:22[39m
-[2023-10-30 00:52:33:5233] [31merror[39m: [31mNot Found: Access code not found[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:24:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:13:22[39m
-[2023-10-30 00:54:01:541] [31merror[39m: [31mReferenceError: access_id is not defined[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:14:18[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[2023-10-30 00:54:21:5421] [31merror[39m: [31mReferenceError: access_id is not defined[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/verifyCipher.js:14:18[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[2023-10-30 00:54:58:5458] [31merror[39m: [31mNot Found: Access code not found[39m
-[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
-[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:24:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:13:22[39m
-[2023-10-30 00:59:39:5939] [31merror[39m: [31mTypeError: accessCodeID.findByPk is not a function[39m
-[31m    at Object.incrementCurrentScavengers (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:35:41)[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:24:49[39m
-[2023-10-30 02:34:23:3423] [31merror[39m: [31mReferenceError: userToken is not defined[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:41:47[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[2023-10-30 02:51:15:5115] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'sessionToken')[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/scavenger.controller.js:9:42[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:114:3)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:284:15[39m
-[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:346:12)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:280:10)[39m
-[31m    at Function.handle (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:175:3)[39m
-[2023-10-30 02:51:55:5155] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'sessionToken')[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/scavenger.controller.js:9:42[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:114:3)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:284:15[39m
-[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:346:12)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:280:10)[39m
-[31m    at Function.handle (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:175:3)[39m
-[2023-10-30 02:53:54:5354] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'sessionToken')[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/scavenger.controller.js:9:42[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:114:3)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:284:15[39m
-[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:346:12)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:280:10)[39m
-[31m    at Function.handle (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:175:3)[39m
-[2023-10-30 02:55:16:5516] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'userToken')[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/scavenger.controller.js:9:42[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:114:3)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:284:15[39m
-[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:346:12)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:280:10)[39m
-[31m    at Function.handle (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:175:3)[39m
-[2023-10-30 02:56:46:5646] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'userToken')[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/scavenger.controller.js:11:42[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:114:3)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:284:15[39m
-[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:346:12)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:280:10)[39m
-[31m    at Function.handle (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:175:3)[39m
-[2023-10-30 02:59:15:5915] [31merror[39m: [31mTypeError: Cannot read properties of undefined (reading 'userToken')[39m
-[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/scavenger.controller.js:11:42[39m
-[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
-[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:114:3)[39m
-[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:284:15[39m
-[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:346:12)[39m
-[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:280:10)[39m
-[31m    at Function.handle (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/index.js:175:3)[39m
-[2023-10-30 03:02:21:221] [31merror[39m: [31mError: data and salt arguments required[39m
-[31m    at Object.hash (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/bcrypt/bcrypt.js:137:17)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/bcrypt/promises.js:29:12[39m
-[31m    at new Promise (<anonymous>)[39m
-[31m    at module.exports.promise (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/bcrypt/promises.js:20:12)[39m
-[31m    at Object.hash (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/bcrypt/bcrypt.js:133:25)[39m
-[31m    at scavengers.<anonymous> (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/models/scavengers.model.js:33:43)[39m
-[31m    at scavengers.runHooks (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/hooks.js:96:18)[39m
-[31m    at model.save (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:2436:30)[39m
-[31m    at async scavengers.create (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:1362:12)[39m
-[31m    at async Object.newScavenger (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/scavengers.service.js:6:21)[39m
-[2023-10-30 10:37:02:372] [31merror[39m: [31mReferenceError: scavenger is not defined[39m
-[31m    at Object.topRankingScavengers (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/scoreBoard.service.js:59:3)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/gameScore.controller.js:24:22[39m
-[2023-10-30 11:17:25:1725] [31merror[39m: [31mError[39m
+[2023-10-31 23:01:24:124] [31merror[39m: [31mError[39m
 [31m    at Query.run (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
 [31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:315:28[39m
 [31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
 [31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
-[31m    at async gameScores.findAll (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:1140:21)[39m
-[31m    at async gameScores.findOne (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:1240:12)[39m
-[31m    at async Object.scoreExists (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/scoreBoard.service.js:84:17)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/gameScore.controller.js:10:23[39m
-[2023-10-30 11:22:56:2256] [31merror[39m: [31mInternal Server Error: invalid input syntax for type uuid: "1JwSSubhmg6iPtRjtyqhUYYH7bZg3Lfy1T"[39m
+[31m    at async accessCodes.findAll (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async accessCodes.findOne (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async accessCodes.findByPk (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:1221:12)[39m
+[31m    at async Object.validateAccessCode (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/accessCodes.services.js:26:22)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:19:22[39m
+[2023-10-31 23:06:26:626] [31merror[39m: [31mUnauthorized: Invalid Access Code[39m
 [31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
 [31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.scoreExists (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/scoreBoard.service.js:88:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/gameScore.controller.js:10:23[39m
-[2023-10-30 11:33:41:3341] [31merror[39m: [31mInternal Server Error: invalid input syntax for type uuid: "1JwSSubhmg6iPtRjtyqhUYYH7bZg3Lfy1T"[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:23:11[39m
+[2023-10-31 23:07:03:73] [31merror[39m: [31mUnauthorized: Invalid Access Code[39m
 [31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
 [31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
-[31m    at Object.scoreExists (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/scoreBoard.service.js:88:11)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/gameScore.controller.js:10:23[39m
-[2023-10-30 11:40:31:4031] [31merror[39m: [31mError[39m
-[31m    at Query.run (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:315:28[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async gameScores.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:984:11)[39m
-[31m    at async Sequelize.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:377:9)[39m
-[2023-10-30 11:41:57:4157] [31merror[39m: [31mError[39m
-[31m    at Query.run (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:315:28[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async gameScores.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:984:11)[39m
-[31m    at async Sequelize.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:377:9)[39m
-[2023-10-30 11:47:49:4749] [31merror[39m: [31mError[39m
-[31m    at Query.run (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:315:28[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async gameScores.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:984:11)[39m
-[31m    at async Sequelize.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:377:9)[39m
-[2023-10-30 11:52:29:5229] [31merror[39m: [31mError[39m
-[31m    at Query.run (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:315:28[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async gameScores.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:984:11)[39m
-[31m    at async Sequelize.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:377:9)[39m
-[2023-10-30 11:54:19:5419] [31merror[39m: [31mError[39m
-[31m    at Query.run (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:315:28[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async gameScores.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:984:11)[39m
-[31m    at async Sequelize.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:377:9)[39m
-[2023-10-30 11:55:18:5518] [31merror[39m: [31mError[39m
-[31m    at Query.run (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
-[31m    at /home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:315:28[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async gameScores.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/model.js:984:11)[39m
-[31m    at async Sequelize.sync (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/sequelize/lib/sequelize.js:377:9)[39m
-[2023-10-30 12:00:39:039] [31merror[39m: [31mReferenceError: userScorescore is not defined[39m
-[31m    at Object.updateUserScore (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/scoreBoard.service.js:52:3)[39m
-[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-[31m    at async file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/gameScore.controller.js:12:5[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:23:11[39m
+[2023-10-31 23:07:24:724] [31merror[39m: [31mUnauthorized: Invalid Access Code[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:23:11[39m
+[2023-10-31 23:07:43:743] [31merror[39m: [31mUnauthorized: Invalid Access Code[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:23:11[39m
+[2023-10-31 23:10:19:1019] [31merror[39m: [31mUnauthorized: Invalid Access Code[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:23:11[39m
+[2023-10-31 23:10:44:1044] [31merror[39m: [31mUnauthorized: Invalid Access Code[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:23:11[39m
+[2023-10-31 23:11:06:116] [31merror[39m: [31mUnauthorized: Invalid Access Code[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:23:11[39m
+[2023-10-31 23:11:21:1121] [31merror[39m: [31mUnauthorized: Invalid Access Code[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:23:11[39m
+[2023-10-31 23:14:34:1434] [31merror[39m: [31mInternal Server Error: Assignment to constant variable.[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at Object.generateCipher (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/services/cipher.service.js:29:11)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:65:39[39m
+[2023-10-31 23:25:38:2538] [31merror[39m: [31mError seeding the database: relation "accessCodes" does not exist[39m
+[2023-10-31 23:25:47:2547] [31merror[39m: [31mError seeding the database: relation "accessCodes" does not exist[39m
+[2023-10-31 23:25:54:2554] [31merror[39m: [31mError seeding the database: relation "accessCodes" does not exist[39m
+[2023-10-31 23:28:06:286] [31merror[39m: [31mUnauthorize: You are not permitted to access this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:53:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at validate (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/validate.js:7:12)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at middleware (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-validator/src/middlewares/check.js:16:13)[39m
+[2023-10-31 23:42:11:4211] [31merror[39m: [31mUnauthorize: You are not permitted to access this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:53:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at validate (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/validate.js:7:12)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at middleware (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-validator/src/middlewares/check.js:16:13)[39m
+[2023-10-31 23:42:15:4215] [31merror[39m: [31mUnauthorize: You are not permitted to access this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:53:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at validate (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/validate.js:7:12)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at middleware (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-validator/src/middlewares/check.js:16:13)[39m
+[2023-10-31 23:42:24:4224] [31merror[39m: [31mUnauthorize: You are not permitted to access this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:53:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at validate (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/validate.js:7:12)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at middleware (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-validator/src/middlewares/check.js:16:13)[39m

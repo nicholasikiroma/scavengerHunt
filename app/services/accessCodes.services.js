@@ -1,22 +1,35 @@
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 import dB from "../models/index.js";
+import logger from "../config/logger.js";
 
-async function createAccessCode(data) {
-  const newAccessCode = await dB.acccesCodes.create({ data });
-  if (!newAccessCode) {
-    throw new APIError(
-      "Internal Server Error",
-      httpStatus.CREATED,
-      true,
-      "Failed to create access code"
+const createAccessCodes = async (tokens, tokenId, maxScavengers) => {
+  try {
+    let i = 0;
+    for (const token of tokens) {
+      await dB.acccesCodes.create({
+        code: token,
+        tokenId: tokenId[i],
+        maxScavengers: maxScavengers,
+      });
+      i += 1;
+    }
+
+    logger.info(
+      `Created ${tokens.length} access codes based on tokens and tokenIds".`
     );
+    return true;
+  } catch (error) {
+    logger.error("Error seeding the database:", error);
   }
-  return newAccessCode;
-}
+};
 
-async function validateAccessCode(codeId) {
-  const accessCode = await dB.acccesCodes.findByPk(codeId);
+async function validateAccessCode(tokenId) {
+  const accessCode = await dB.acccesCodes.findOne({
+    where: {
+      tokenId,
+    },
+  });
   if (!accessCode) {
     throw new APIError(
       "Not Found",
@@ -38,7 +51,7 @@ async function incrementCurrentScavengers(accessCodeID) {
 }
 
 const accessCodeService = {
-  createAccessCode,
+  createAccessCodes,
   validateAccessCode,
   incrementCurrentScavengers,
 };

@@ -1,7 +1,19 @@
-import { body } from "express-validator";
+import { body, param } from "express-validator";
 
-const validateBody = () => {
+const validateCipher = () => {
   return [body("cipher").notEmpty().isString().trim().escape()];
 };
 
-export default validateBody;
+const createCipher = () => {
+  return [
+    body("maxScavengers").notEmpty().isInt().escape(),
+    body("numberOfTokens").notEmpty().isInt().escape(),
+    param("apiKey").notEmpty().isString().trim().escape(),
+  ];
+};
+
+const validator = {
+  createCipher,
+  validateCipher,
+};
+export default validator;

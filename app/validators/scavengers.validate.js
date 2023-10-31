@@ -2,7 +2,12 @@ import { body, param } from "express-validator";
 
 const createScavenger = () => {
   return [
-    body("walletAddress").notEmpty().isString().trim().escape(),
+    body("walletAddress")
+      .notEmpty()
+      .isString()
+      .trim()
+      .escape()
+      .withMessage("Address field cannot be blank"),
     body("userToken").notEmpty().isHexadecimal().trim().escape(),
   ];
 };

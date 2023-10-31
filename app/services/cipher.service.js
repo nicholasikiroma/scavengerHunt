@@ -6,19 +6,25 @@ import logger from "../config/logger.js";
 const sodium = _sodium;
 await sodium.ready;
 
-async function generateCipher(message, hexKey) {
+async function generateCipher(tokens, tokenIds, hexKey) {
   const key = sodium.from_hex(hexKey);
   try {
-    let nonce = sodium.randombytes_buf(sodium.crypto_secretbox_NONCEBYTES);
+    let i = 0;
+    const uniqueCiphers = new Set();
+    for (const token of tokens) {
+      let nonce = sodium.randombytes_buf(sodium.crypto_secretbox_NONCEBYTES);
+      const message = tokenIds[i] + ":" + token;
+      const ciphertext = sodium.crypto_secretbox_easy(message, nonce, key);
 
-    const ciphertext = sodium.crypto_secretbox_easy(message, nonce, key);
+      // Combine nonce and ciphertext
+      const cipher = new Uint8Array(nonce.length + ciphertext.length);
+      cipher.set(nonce, 0);
+      cipher.set(ciphertext, nonce.length);
+      uniqueCiphers.add(sodium.to_base64(cipher));
+      i += 1;
+    }
 
-    // Combine nonce and ciphertext
-    const cipher = new Uint8Array(nonce.length + ciphertext.length);
-    cipher.set(nonce, 0);
-    cipher.set(ciphertext, nonce.length);
-
-    return sodium.to_base64(cipher);
+    return Array.from(uniqueCiphers);
   } catch (error) {
     throw new APIError(
       "Internal Server Error",

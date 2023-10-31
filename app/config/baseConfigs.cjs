@@ -19,6 +19,7 @@ const envVarsSchema = Joi.object()
     SALT_ROUNDS: Joi.number().required().description("Salt for hashing"),
     BASE_URL: Joi.string(),
     ENCRYPTION_kEY: Joi.required(),
+    API_KEY: Joi.string().required(),
   })
   .unknown();
 
@@ -31,6 +32,7 @@ if (error) {
 }
 
 module.exports = {
+  apiKey: envVars.API_KEY,
   env: envVars.NODE_ENV,
   salt: envVars.SALT_ROUNDS,
   encryptionKey: envVars.ENCRYPTION_kEY,

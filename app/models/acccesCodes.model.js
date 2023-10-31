@@ -11,6 +11,11 @@ export default (sequelize, Sequelize) => {
         primaryKey: true,
         defaultValue: Sequelize.UUIDV4,
       },
+      tokenId: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
+      },
       code: {
         type: Sequelize.STRING,
         allowNull: false,

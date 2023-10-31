@@ -3,14 +3,18 @@ import httpStatus from "http-status";
 import asyncHandler from "express-async-handler";
 import { APIError } from "../config/error.js";
 import accessCodeService from "../services/accessCodes.services.js";
-import hexGenerator from "../utils/randomToken.js";
+import { tokenIdArrayGenerator, hexGenerator } from "../utils/randomToken.js";
 import logger from "../config/logger.js";
+import generateUniqueTokens from "../utils/tokenGenerator.js";
+import cipherService from "../services/cipher.service.js";
+import pkg from "../config/baseConfigs.cjs";
+const { encryptionKey, apiKey } = pkg;
 
 const validateAccessCode = asyncHandler(async (req, res) => {
   const access_id = req.access_id;
   const session = req.session;
-  const [uid, code] = access_id.split(":");
-  const acccesCode = await accessCodeService.validateAccessCode(uid);
+  const [tokenId, code] = access_id.split(":");
+  const acccesCode = await accessCodeService.validateAccessCode(tokenId);
   const match = await bcrypt.compare(code, acccesCode.code);
 
   if (!match) {
@@ -41,15 +45,39 @@ const validateAccessCode = asyncHandler(async (req, res) => {
     .send({ message: "validation successful", sessionToken });
 });
 
-const createAccessCode = asyncHandler(async (req, res) => {
-  const data = req.body;
-  const accessCode = await accessCodeService.createAccessCode(data);
-  res.status(httpStatus.CREATED).send({ accessCode });
+const generateCipher = asyncHandler(async (req, res) => {
+  const { maxScavengers, numberOfTokens } = req.body;
+  const key = req.params.apiKey;
+
+  if (key !== apiKey) {
+    throw new APIError(
+      "Unauthorize",
+      httpStatus.UNAUTHORIZED,
+      true,
+      "You are not permitted to access this resource"
+    );
+  }
+
+  const tokens = await generateUniqueTokens(numberOfTokens, 5);
+  const tokenIds = await tokenIdArrayGenerator(numberOfTokens);
+  const ciphers = await cipherService.generateCipher(
+    tokens,
+    tokenIds,
+    encryptionKey
+  );
+
+  await accessCodeService.createAccessCodes(tokens, tokenIds, maxScavengers);
+
+  // Send ciphers as a file to the client
+  const ciphersText = ciphers.join("\n");
+  res.set("Content-Type", "text/plain");
+  res.set("Content-Disposition", "attachment; filename=ciphers.txt");
+  res.send(ciphersText);
 });
 
 const accessCodeController = {
-  createAccessCode,
   validateAccessCode,
+  generateCipher,
 };
 
 export default accessCodeController;
