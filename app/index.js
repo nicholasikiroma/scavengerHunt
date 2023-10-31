@@ -1,4 +1,3 @@
-import crypto from "crypto";
 import session from "express-session";
 import express from "express";
 import compression from "compression";
@@ -7,7 +6,6 @@ import cors from "cors";
 import morganMiddleware from "./middlewares/morgan.middleware.js";
 import dB from "./models/index.js";
 import router from "./routes/index.js";
-import cookieParser from "cookie-parser";
 import { errorHandler } from "./middlewares/errorHandler.js";
 
 const app = express();

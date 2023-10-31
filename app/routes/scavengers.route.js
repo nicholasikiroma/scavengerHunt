@@ -1,5 +1,7 @@
 import express from "express";
 import scavengerController from "../controllers/scavenger.controller.js";
+import validator from "../validators/scavengers.validate.js";
+import validate from "../middlewares/validate.js";
 
 const scavengerRouter = express.Router();
 
@@ -7,9 +9,19 @@ const scavengerRouter = express.Router();
 scavengerRouter.get("", scavengerController.fetchAllScavengers);
 
 //fetch player by wallet address
-scavengerRouter.get("/:walletAddress", scavengerController.fetchOneScavenger);
+scavengerRouter.get(
+  "/:walletAddress",
+  validator.fetchScavenger(),
+  validate,
+  scavengerController.fetchOneScavenger
+);
 
 // create new player
-scavengerRouter.post("", scavengerController.createScavenger);
+scavengerRouter.post(
+  "",
+  validator.createScavenger(),
+  validate,
+  scavengerController.createScavenger
+);
 
 export default scavengerRouter;

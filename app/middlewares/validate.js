@@ -1,5 +1,6 @@
 import { validationResult } from "express-validator";
 import httpStatus from "http-status";
+import { APIError } from "../config/error.js";
 
 const validate = (req, res, next) => {
   const errors = validationResult(req);
@@ -8,9 +9,12 @@ const validate = (req, res, next) => {
   }
   const extractedErrors = [];
   errors.array().map((err) => extractedErrors.push({ [err.path]: err.msg }));
-  return res
-    .status(httpStatus.UNPROCESSABLE_ENTITY)
-    .send({ errors: extractedErrors });
+  throw new APIError(
+    "Unprocessable Entity",
+    httpStatus.UNPROCESSABLE_ENTITY,
+    true,
+    { error: extractedErrors }
+  );
 };
 
 export default validate;

@@ -23,18 +23,18 @@ const defaultRoutes = [
 ];
 
 const devRoutes = [
-  {
-    path: "/dev/scavengers",
-    route: scavengerRouter,
-  },
-  {
-    path: "/dev/auth",
-    route: accessCodeRouter,
-  },
-  {
-    path: "/dev/scores",
-    route: scoreBoardRouter,
-  },
+  //  {
+  //    path: "/dev/scavengers",
+  //    route: scavengerRouter,
+  //  },
+  //  {
+  //    path: "/dev/auth",
+  //    route: accessCodeRouter,
+  //  },
+  //  {
+  //    path: "/dev/scores",
+  //    route: scoreBoardRouter,
+  //  },
 ];
 
 defaultRoutes.forEach((route) => {

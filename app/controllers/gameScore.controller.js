@@ -2,7 +2,6 @@ import httpStatus from "http-status";
 import gameScoresService from "../services/scoreBoard.service.js";
 import { APIError } from "../config/error.js";
 import asyncHandler from "express-async-handler";
-import scavengerService from "../services/scavengers.service.js";
 
 // create score
 const createScore = asyncHandler(async (req, res) => {
@@ -29,13 +28,11 @@ const fetchAllScores = asyncHandler(async (req, res) => {
   res.status(httpStatus.OK).send({ scores });
 });
 
-// update user score
-const updateUserScore = asyncHandler(async (req, res) => {
-  const walletAddress = req.params;
-  const data = req.body;
-  await scavengerService.OneScavenger(walletAddress);
-  await gameScoresService.updateUserScore(data, walletAddress);
-  res.status(httpStatus.OK).send({ message: "Score updated" });
+// fetch one score
+const fetchOneScore = asyncHandler(async (req, res) => {
+  const { walletAddress } = req.params;
+  const score = await gameScoresService.fetchOneScore(walletAddress);
+  res.status(httpStatus.OK).send({ score });
 });
 
 // fetch top 200 scavengers
@@ -46,9 +43,9 @@ const fetchTopScavengers = asyncHandler(async (req, res) => {
 
 const gameScoreController = {
   fetchAllScores,
-  updateUserScore,
   fetchTopScavengers,
   createScore,
+  fetchOneScore,
 };
 
 export default gameScoreController;

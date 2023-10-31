@@ -37,7 +37,7 @@ app.get(
         },
         typography: {
           fontFamily: `"museo-sans", 'Helvetica Neue', Helvetica, Arial, sans-serif`,
-          fontSize: "15px",
+          fontSize: "16px",
           lineHeight: "1.5",
           code: {
             code: "#87E8C7",
