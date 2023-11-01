@@ -12,7 +12,7 @@ process.on("uncaughtException", (error) => {
   }
 });
 
-// serve your swagger.json file
+// serve swagger file
 app.get("/docs/swagger.json", (req, res) => {
   res.sendFile("docs.json", { root: "." });
 });
@@ -24,7 +24,7 @@ app.get(
   redoc({
     title: "API Docs",
     specUrl: "/docs/swagger.json",
-    nonce: "", // <= it is optional,we can omit this key and value
+    nonce: "724b092810ec86d7e35c9d067702b31ef90bc43a7b598626749914d6a3e033ed", // <= it is optional,we can omit this key and value
     // we are now start supporting the redocOptions object
     // you can omit the options object if you don't need it
     // https://redocly.com/docs/api-reference-docs/configuration/functionality/
@@ -37,7 +37,7 @@ app.get(
         },
         typography: {
           fontFamily: `"museo-sans", 'Helvetica Neue', Helvetica, Arial, sans-serif`,
-          fontSize: "16px",
+          fontSize: "15px",
           lineHeight: "1.5",
           code: {
             code: "#87E8C7",

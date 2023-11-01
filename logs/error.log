@@ -103,3 +103,32 @@
 [31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
 [31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
 [31m    at middleware (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-validator/src/middlewares/check.js:16:13)[39m
+[2023-10-31 23:52:22:5222] [31merror[39m: [31mUnauthorize: You are not permitted to access this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/controllers/accessCodes.controller.js:53:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at validate (file:///home/puppetmaster/Desktop/projects/scavengerHunt/app/middlewares/validate.js:7:12)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at middleware (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express-validator/src/middlewares/check.js:16:13)[39m
+[2023-11-01 00:42:54:4254] [31merror[39m: [31mError: listen EADDRINUSE: address already in use :::3001[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1751:16)[39m
+[31m    at listenInCluster (node:net:1799:12)[39m
+[31m    at Server.listen (node:net:1887:7)[39m
+[31m    at Function.listen (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/application.js:635:24)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/server.js:55:5[39m
+[2023-11-01 00:43:09:439] [31merror[39m: [31mError: listen EADDRINUSE: address already in use :::3001[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1751:16)[39m
+[31m    at listenInCluster (node:net:1799:12)[39m
+[31m    at Server.listen (node:net:1887:7)[39m
+[31m    at Function.listen (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/application.js:635:24)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/server.js:55:5[39m
+[2023-11-01 00:45:51:4551] [31merror[39m: [31mError: listen EADDRINUSE: address already in use :::3001[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1751:16)[39m
+[31m    at listenInCluster (node:net:1799:12)[39m
+[31m    at Server.listen (node:net:1887:7)[39m
+[31m    at Function.listen (/home/puppetmaster/Desktop/projects/scavengerHunt/node_modules/express/lib/application.js:635:24)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/scavengerHunt/server.js:55:5[39m

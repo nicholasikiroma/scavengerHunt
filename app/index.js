@@ -11,7 +11,17 @@ import { errorHandler } from "./middlewares/errorHandler.js";
 const app = express();
 const expiryDate = 60 * 60 * 1000; // 1 hour
 
-app.use(helmet());
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "https://unpkg.com"],
+      scriptSrcElem: ["'self'", "https://unpkg.com", "'unsafe-inline'"],
+      workerSrc: ["'self'", "blob:"],
+    },
+  })
+);
+
 app.use(compression());
 app.use(cors());
 app.use(express.json());
