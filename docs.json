@@ -2,8 +2,8 @@
   "openapi": "3.0.0",
   "servers": [
     {
-      "description": "Production Server",
-      "url": "https://recorder-service.onrender.com/api"
+      "description": "Testing Server",
+      "url": "https://scavenger-hunt-gm0j.onrender.com/api"
     },
     {
       "description": "Development Server",
@@ -236,7 +236,7 @@
               "type": "string",
               "format": "crypto wallet address"
             },
-            "description": "TCrypto wallet associated with user"
+            "description": "Crypto wallet associated with user"
           }
         ],
         "responses": {
@@ -343,10 +343,12 @@
                   "type": "object",
                   "properties": {
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "validation successful"
                     },
-                    "data": {
-                      "$ref": "#/components/schemas/AccessCodes"
+                    "sessionToken":{
+                      "type":"string",
+                      "format": "hex string"
                     }
                   }
                 }
