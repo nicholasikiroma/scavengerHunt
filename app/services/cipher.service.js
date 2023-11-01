@@ -6,6 +6,18 @@ import logger from "../config/logger.js";
 const sodium = _sodium;
 await sodium.ready;
 
+/**
+ * Function: generateCipher
+ * 
+ * Description:
+ * This asynchronous function is used to generate ciphers for an array of tokens, where each token is associated with a corresponding token ID. The ciphers are created using encryption with a provided hex key. The function combines nonce and ciphertext for each token and returns an array of unique ciphers as base64-encoded strings.
+
+ * @param {string[]} tokens - An array of strings representing the tokens to be encrypted.
+ * @param {string[]} tokenIds - An array containing token IDs that correspond to the tokens parameter.
+ * @param {string} hexKey - The encryption key as a hex string used for encrypting the tokens.
+
+ * @returns {Promise<string[]>} - A Promise that resolves to an array of unique ciphers as base64-encoded strings for the provided tokens. In case of an error, the function throws an APIError.
+ */
 async function generateCipher(tokens, tokenIds, hexKey) {
   const key = sodium.from_hex(hexKey);
   try {
@@ -35,6 +47,17 @@ async function generateCipher(tokens, tokenIds, hexKey) {
   }
 }
 
+/**
+ * Function: decryptCipher
+ * 
+ * Description:
+ * This asynchronous function is used to decrypt a base64-encoded cipher using a provided hex key. It decrypts the cipher and returns the original message. If the cipher or key is invalid, it throws an APIError.
+
+ * @param {string} cipherBase64 - The base64-encoded cipher that needs to be decrypted.
+ * @param {string} hexKey - The encryption key as a hex string used for decrypting the cipher.
+
+ * @returns {Promise<string>} - A Promise that resolves to the decrypted message as a string. In case of an error, the function throws an APIError.
+ */
 async function decryptCipher(cipherBase64, hexKey) {
   const key = sodium.from_hex(hexKey);
   const cipher = sodium.from_base64(cipherBase64);

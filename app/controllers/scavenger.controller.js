@@ -2,12 +2,11 @@ import { APIError } from "../config/error.js";
 import httpStatus from "http-status";
 import scavengerService from "../services/scavengers.service.js";
 import asyncHandler from "express-async-handler";
-import logger from "../config/logger.js";
 
 const createScavenger = asyncHandler(async (req, res) => {
   const json = req.body;
   const session = req.session;
-  if (json.sessionToken !== session.data.userToken) {
+  if (json.userToken !== session.data.userToken) {
     throw new APIError(
       "Unauthorized",
       httpStatus.UNAUTHORIZED,

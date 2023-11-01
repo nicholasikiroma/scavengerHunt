@@ -8,7 +8,7 @@ const createScavenger = () => {
       .trim()
       .escape()
       .withMessage("Address field cannot be blank"),
-    body("userToken").notEmpty().isHexadecimal().trim().escape(),
+    body("userToken").notEmpty().isString().trim().escape(),
   ];
 };
 
