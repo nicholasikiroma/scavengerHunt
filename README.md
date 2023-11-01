@@ -12,7 +12,7 @@
 
 ## Description
 
-This is a simple Express API running on port 3001. It provides a foundation for building and extending your own API.
+The ScavengerHunt API is designed for managing a picture puzzle game where players move pieces around to create the perfect image. Players compete to complete puzzles in the shortest time and with the fewest moves possible. This API provides a set of endpoints to support various game-related functionalities.
 
 ## Features
 
