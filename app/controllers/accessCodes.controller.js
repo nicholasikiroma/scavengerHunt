@@ -38,8 +38,6 @@ const validateAccessCode = asyncHandler(async (req, res) => {
     userToken: sessionToken,
     id: acccesCode.id,
   };
-
-  logger.info(JSON.stringify(req.session, null, 2));
   res
     .status(httpStatus.OK)
     .send({ message: "validation successful", sessionToken });

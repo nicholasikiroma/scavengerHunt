@@ -7,6 +7,8 @@ import morganMiddleware from "./middlewares/morgan.middleware.js";
 import dB from "./models/index.js";
 import router from "./routes/index.js";
 import { errorHandler } from "./middlewares/errorHandler.js";
+import pkg from "./config/baseConfigs.cjs";
+const { cookie_name, cookie_secret } = pkg;
 
 const app = express();
 const expiryDate = 60 * 60 * 1000; // 1 hour
@@ -28,8 +30,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   session({
-    secret: "sjdjf",
-    name: "fishy",
+    secret: cookie_secret,
+    name: cookie_name,
     cookie: {
       httpOnly: true,
       secure: false,

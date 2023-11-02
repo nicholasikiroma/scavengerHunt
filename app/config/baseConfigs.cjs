@@ -20,6 +20,8 @@ const envVarsSchema = Joi.object()
     BASE_URL: Joi.string(),
     ENCRYPTION_kEY: Joi.required(),
     API_KEY: Joi.string().required(),
+    COOKIE_SECRET: Joi.string().required(),
+    COOKIE_NAME: Joi.string().required(),
   })
   .unknown();
 
@@ -32,6 +34,8 @@ if (error) {
 }
 
 module.exports = {
+  cookie_name: envVars.COOKIE_NAME,
+  cookie_secret: envVars.COOKIE_SECRET,
   apiKey: envVars.API_KEY,
   env: envVars.NODE_ENV,
   salt: envVars.SALT_ROUNDS,

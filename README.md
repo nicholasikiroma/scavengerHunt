@@ -67,6 +67,8 @@ DB_PASS=<replace-with-db-password>
 DB_DIALECT=<replace-with-db-dialect>
 NODE_ENV=<replace-with-environment>
 DB_URL=<replace-with-db-url>
+COOKIE_SECRET=<replace-with-COOKIE_SECRET>
+COOKIE_NAME=<replace-with-COOKIE_NAME>
 ```
 
 ## API Documentation
